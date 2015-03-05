@@ -1,4 +1,8 @@
-Hacking Public Health
-=====================
+# README
 
-Occasional posts at the intersection between coding and public health.
+A repository for [revealjs](http://lab.hakim.se/reveal-js/#/) presentations.
+
+View:
+
+- [Twitter - Ecigs - 13-21 Feb 2015](http://gauden.github.io/slides/twitter.html)
+
