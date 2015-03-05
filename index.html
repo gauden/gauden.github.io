@@ -1,70 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>Hacking Public Health</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <meta charset="utf-8">
+    <title>Twitter Data for Public Health: an example aplication</title>
+    <link rel="stylesheet" href="static/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="static/revealjs/css/theme/simple.css" id="theme">
+    <!--Add support for earlier versions of Internet Explorer -->
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Hacking Public Health </a></h1>
-                <nav><ul>
-                    <li><a href="/category/posts.html">Posts</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<body>
+    <!-- Wrap the entire slide show in a div using the "reveal" class. -->
+    <div class="reveal">
+        <!-- Wrap all slides in a single "slides" class -->
+        <div class="slides">
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/hacking-public-health.html">Hacking Public Health</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2014-01-10T22:00:00">
-                Fri 10 January 2014
-        </abbr>
+            <!-- ALL SLIDES GO HERE -->
+            <!-- Each section element contains an individual slide -->
+<section data-markdown>
+<script type="text/template">
+# Twitter Data
 
-        <address class="vcard author">
-                By <a class="url fn" href="/author/gauden-galea.html">Gauden Galea</a>
-        </address>
-<p>In <a href="/category/posts.html">Posts</a>. </p>
-<p>tags: <a href="/tag/python.html">python</a><a href="/tag/coding.html">coding</a><a href="/tag/blogging.html">blogging</a><a href="/tag/public-health.html">public health</a></p>
-</footer><!-- /.post-info --><p>This is the content of my initial blog post -- being created only in order to set up a placeholder for the eventual blog on Github pages using the <code>pelican</code> static site generator.</p>                </article>
-<p class="paginator">
-    Page 1 / 1
-</p>
-            </aside><!-- /#featured -->
-            </ol><!-- /#posts-list -->
-            </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+An example application to e-cigarettes
+</script>
+</section>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+<section data-markdown>
+<script type="text/template">
+## The Questions
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+- What are the themes of discussion on Twitter in relation to e-cigarettes?
+- Who engages in these discussions?
+- Does this have any implication for the use of social media for public health?
+</script>
+</section>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<section data-markdown>
+<script type="text/template">
+## Methods
 
+Using the [Twitter REST API](https://dev.twitter.com/rest/public) a harvest was conducted for all tweets that contained any or all of the following strings:
+
+- ecigs
+- ecigarettes
+- vapers
+- vaping
+
+The harvest was started on Saturday, 21 Feb 2015 at 20:00, and concluded on Sunday, 22 Feb 2015 at 00:45.
+</script>
+</section>
+
+<section style="font-size: 0.5em;">
+{"_id":"569108567560552449","contributors":null,"truncated":false,"text":"Mail-order
+buying e cigs discounting the perfect 3 choices overstock admit straight a
+coupon order of nature in... http://t.co/egN3C7xqCE","hashtags":[],"
+in_reply_to_status_id":null,"favorite_count":0,"source":"<a href=\"http://dlvr.it
+\" rel=\"nofollow\">dlvr.it</a>","retweeted":false,"coordinates":null,"entities":
+{"symbols":[],"user_mentions":[],"hashtags":[],"urls":[{"url":"http://t.co/
+egN3C7xqCE","indices":[113,135],"expanded_url":"http://dlvr.it/8g8f5r","
+display_url":"dlvr.it/8g8f5r"}]},"in_reply_to_screen_name":null,"
+in_reply_to_user_id":null,"retweet_count":0,"id_str":"569108567560552449","
+favorited":false,"user":{"follow_request_sent":false,"
+profile_use_background_image":true,"profile_text_color":"333333","id":1220326658,
+"verified":false,"profile_location":null,"profile_image_url_https":"https://pbs.
+twimg.com/profile_images/3345392745/f188bcf04c9cb3b80d37226d7537b902_normal.jpeg"
+,"profile_sidebar_fill_color":"DDEEF6","contributors_enabled":false,"entities":{"
+description":{"urls":[]}},"followers_count":108,"profile_sidebar_border_color":"
+C0DEED","location":"","default_profile_image":false,"id_str":"1220326658","
+is_translation_enabled":false,"utc_offset":3600,"statuses_count":60651,"
+description":"","friends_count":1,"profile_link_color":"0084B4","
+profile_image_url":"http://pbs.twimg.com/profile_images/3345392745/
+f188bcf04c9cb3b80d37226d7537b902_normal.jpeg","notifications":false,"geo_enabled"
+:false,"profile_background_color":"C0DEED","profile_background_image_url":"http:/
+/abs.twimg.com/images/themes/theme1/bg.png","name":"EvaSusan","lang":"nl","
+following":false,"profile_background_tile":false,"favourites_count":0,"
+screen_name":"EvaSusan3","url":null,"created_at":"2013-02-26T03:00:36Z","
+profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme1/
+bg.png","time_zone":"Skopje","protected":false,"default_profile":true,"
+is_translator":false,"listed_count":2},"geo":null,"in_reply_to_user_id_str":null,
+"possibly_sensitive":false,"lang":"en","created_at":"2015-02-13T20:14:38Z","
+metadata":{"iso_language_code":"en","result_type":"recent"},"
+in_reply_to_status_id_str":null,"place":null}
+</section>
+
+<section data-markdown>
+<script type="text/template">
+    ## The Dataset
+
+| Attribute                   | Value |
+|-----------------------------|------------------------------:|
+| Tweets harvested            | 29,284                        |
+| First Tweet on              | Fri, 13 Feb 2015 20:14:38 UTC |
+| Last Tweet on               | Sat, 21 Feb 2015 15:39:17 UTC |
+| Geolocated Tweets           | 196                           |
+
+</script>
+</section>
+
+<section>
+    <section data-markdown>
+    ## Geolocated Tweets
+    </section>
+
+    <section>
+    <iframe data-src="maps/ecigs_all_dates.html" width='95%' height='640px'></iframe>
+    </section>
+</section>
+
+<section>
+        <section data-markdown data-transition="fade" data-transition-speed="slow">
+            <script type="text/template">
+## Tweets per Hour
+
+Diurnal variation before 19 Feb 2015
+
+![Tweets per Hour before 19 Feb](img/01.png)
+            </script>
+        </section>
+
+        <section data-markdown data-transition="fade" data-transition-speed="slow">
+            <script type="text/template">
+## Tweets per Hour
+
+From 19 to 22 Feb 2015
+
+![Tweets per Hour after 19 Feb](img/02.png)
+            </script>
+        </section>
+
+        <section data-markdown data-transition="fade" data-transition-speed="slow">
+            <script type="text/template">
+## Tweets per Hour
+
+On 19 Feb 2015
+
+![Tweets per Hour after 19 Feb](img/03.png)
+            </script>
+        </section>
+
+        <section data-markdown data-transition="fade" data-transition-speed="slow">
+            <script type="text/template">
+## Tweets per Minute
+
+On 19 Feb 2015 (Vertical axis zoomed to 300)
+
+![Tweets per Hour after 19 Feb](img/04.png)
+            </script>
+        </section>
+
+        <section data-markdown data-transition="fade" data-transition-speed="slow">
+            <script type="text/template">
+## Tweets per Minute
+
+Focus on 19 Feb 2015 04:00-09:00
+
+![Tweets per minute on 19 Feb](img/05.png)
+            </script>
+        </section>
+</section>
+
+
+<section>
+        <section data-markdown>
+## Tag Streams
+
+- Overview of Top Tags
+- Focused view on 19th Feb 04:00 to 10:00 UTC
+        </section>
+        <section>
+                <h4>Whole Dataset</h4>
+                <iframe data-src="maps/ecigs_all_stream.html" width='95%' height='640px'></iframe>
+        </section>
+        <section>
+                <h4>19th February 04:00 to 10:00</h4>
+                <iframe data-src="maps/ecigs_0219_stream.html" width='95%' height='640px'></iframe>
+        </section>
+</section>
+
+<section>
+    <section data-markdown>
+        <script type="text/template">
+## What Really Happened?
+
+Try a search: <!-- .element: class="fragment" data-fragment-index="1" -->
+
+`ecigarettes 19th February 2015` <!-- .element: class="fragment" data-fragment-index="2" -->
+      </script>
+  </section>
+        <section>
+            <iframe data-src="http://ec.europa.eu/transparency/regexpert/index.cfm?do=groupDetail.groupDetailDoc&id=17795&no=1" width='95%' height='640px'></iframe>
+        </section>
+            <section>
+                <iframe data-src="http://www.clivebates.com/?p=2876" width='95%' height='640px'></iframe>
+            </section>
+</section>
+
+<section>
+    <section>
+        <h2>Who was Involved?</h2>
+        <iframe data-src="maps/graph_who_mentioners.html" width='960px' height='680px'></iframe>
+  </section>
+    <section data-markdown>
+        <script type="text/template">
+## The Influencers
+
+| Account         | No. of Mentions |
+|-----------------|----------------:|
+| MagicMistECigs  | 2219 |
+| holysmoke       | 127 |
+| spectator       | 100 |
+| swimdaily       | 94 |
+| VapinXsmoker    | 86 |
+| Nigel_Farage    | 78 |
+| SpectatorHealth | 65 |
+| UKIP            | 58 |
+| Clive_Bates     | 54 |
+</script>
+    </section>
+</section>
+
+<section >
+        <section data-markdown>
+# Beginnings
+
+## No conclusions today...
+        </section>
+
+        <section data-markdown>
+## Uses
+
+- Tag monitoring
+- Social network analysis
+- Early warning
+- Campaign design
+        </section>
+
+        <section data-markdown>
+## Issues
+
+- Validation
+- Use of multiple data streams
+- Language issues
+- So what?
+        </section>
+
+        <section data-markdown>
+## W.O.O. *
+
+- Ops: capture the streams
+- Dev: facilitate data capture
+- Technical Units: play, innovate, analyse
+
+----
+
+(*) Whole Of Organization
+        </section>
+</section>
+
+    <section data-markdown>
+        <script type="text/template">
+# Thank You
+
+----
+
+Built with
+
+[Twitter API](https://dev.twitter.com/rest/public)
+
+[Python](https://www.python.org/) | [MongoDB](http://www.mongodb.org/)
+
+[IPython](http://ipython.org/) | [Atom](https://atom.io/)
+
+[revealjs](http://lab.hakim.se/reveal-js/#/) | [leafletjs](http://leafletjs.com/) | [nvd3](http://nvd3.org/) | [d3js](http://d3js.org/)
+      </script>
+  </section>
+
+
+            </div>
+    </div>
+    <script src="static/revealjs/lib/js/head.min.js"></script>
+    <script src="static/revealjs/js/reveal.js"></script>
+
+    <script>
+        // Required, even if empty.
+        Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+            // Transition style
+            transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'static/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'static/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'static/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'static/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'static/revealjs/plugin/notes/notes.js' }
+                ]
+            });
+    </script>
 </body>
 </html>
