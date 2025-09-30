@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AI + HPSR — Working Group Slides</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <!-- Reveal.js core + theme (black, white, league, beige, sky, night, serif, simple, solarized) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css" />
+  <!-- Themes can be: black, white, league, beige, sky, night, serif, simple, solarized -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/beige.min.css" id="theme" />
+  <!-- ode highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" />
+
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Paste MARKDOWN slides between the script tags below -->
+      <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$"
+        data-separator-notes="^Note:">
+        <script type="text/template">
+
+
+  <img src="./assets/img/banner.png" 
+  alt="Conference Banner" style="width:80%;">
+
+--
+
+# AI for HPSR
+
+## Tools, Skills, and Institutional Support
+
+### Gauden Galea
+
+Honorary Professor, University of Malta  
+Former Strategic Advisor, WHO/Europe  
+30 September 2025
+
+---
+
+<figure>
+  <a href="https://www.theguardian.com/society/2023/oct/12/everything-you-need-to-know-about-nhs-englands-biggest-ever-it-contract" 
+  alt="Article in The Guardian about the contract with Palantir"><img src="./assets/img/20231121 nhs england biggest IT contract The Guardian.png" 
+  alt="The Guardian" style="width:70%;"></a>
+  <figcaption style="font-size:60%; margin-top:0.5em;">
+    <a href="https://www.theguardian.com/society/2023/oct/12/everything-you-need-to-know-about-nhs-englands-biggest-ever-it-contract" 
+  alt="Article in The Guardian about the contract with Palantir">NHS paid £330m to Palantir</a> for a “federated” health data platform,<br>with some <a href="https://www.theregister.com/2025/05/16/nhs_hospitals_palantir/">regional authorities remaining unconvinced</a>.
+  </figcaption>
+</figure>
+
+--
+
+# ...In the Same Vein
+
+- **USA**: paused a **US $10 billion** Oracle-Cerner contract [after safety concerns](https://www.fiercehealthcare.com/ai-and-machine-learning/lawmakers-grill-va-oracle-leaders-over-pharmacy-related-patient-safety) 
+- [**Denmark**](https://www.politico.com/story/2019/06/06/epic-denmark-health-1510223) and **Finland**: spent a combined **US $100  million** on Epic, yet [implementations were still troubled years after the first go-live](https://www.sciencedirect.com/science/article/abs/pii/S1386505622001824?via%3Dihub)
+- **Australia's** personal health record has [absorbed over **US $1.3 billion**](https://www.anao.gov.au/sites/default/files/2024-06/Auditor-General_Report_2023-24_36.pdf), most to one vendor
+
+--
+
+# What if...
+
+...countries spent less on proprietary software and more on health policy and systems research, open ecosystems, skills, and institutional support?
+
+
+---
+
+# 🌐 
+
+## Open Source Tools
+
+--
+
+| Knowledge Generation functions (1) | E.g. OS Tools |
+|------------------------------------|------------------|
+| AI programming and statistical analysis | [Python](https://www.python.org/), [R](https://www.r-project.org/) |
+| Deep learning | [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/) |
+| Running OS AI Models locally or in cloud  | [Ollama](https://ollama.com/) |
+
+--
+
+| Knowledge Generation functions (2) | E.g. OS Tools |
+|------------------------------------|------------------|
+| Natural language processing | [spaCy](https://spacy.io/) |
+| NLP models and datasets | [HuggingFace](https://huggingface.co/) |
+| Compartmental models for health care cascades... | [Atomica](https://atomica.tools/) |
+| Network analysis, bibliometrics...  | [NetworkX](https://networkx.org/) |
+| Agent-based modelling | [Mesa](https://mesa.readthedocs.io/), [NetLogo](https://ccl.northwestern.edu/netlogo/) |
+
+--
+
+| Application to Strengthening Institutions | E.g. OS Tools |
+|------------------------------------------|------------------|
+| Health information systems | [DHIS2](https://dhis2.org/) |
+| Electronic medical records | [OpenMRS](https://openmrs.org/) |
+| Fairness evaluation & mitigation | [Fairlearn](https://fairlearn.org/) |
+| Model testing & interpretability | [What-If Tool](https://pair-code.github.io/what-if-tool/) |
+| Code collaboration & versioning | [GitHub](https://github.com/) |
+| Open data & research sharing | [Zenodo](https://zenodo.org/) |
+| Reproducibility of research | [Marimo](https://marimo.io/), [Jupyter](https://jupyter.org/) |
+
+--
+
+| Application to Advocating HPSR | E.g. OS Tools |
+|--------------------------------|------------------|
+| Data journalism & storytelling | [D3.js](https://d3js.org/) |
+| Interactive charts & dashboards| [Vega-Lite](https://vega.github.io/vega-lite/) |
+| Policy dashboards | [Plotly Dash](https://plotly.com/dash/) |
+| Business intelligence & data exploration | [Superset](https://superset.apache.org/), [Metabase](https://www.metabase.com/) |
+
+--
+
+# Questions
+
+- How many of these functions and tools are supported in training **curricula in LMICs**?
+- What **alliances** can be forged with the open-source community to better support HPSR in LMICs?
+
+---
+
+# 🧠 > 🛠️
+
+## Skills over Tools
+
+--
+
+## Generating Knowledge
+
+<div style="display:flex; justify-content:space-between; gap:4rem; width:100%;">
+  <div style="flex:1;">
+    <h3>AI Skills</h3>
+    <ul>
+      <li>Data curation</li>
+      <li>Predictive modeling</li>
+      <li>NLP</li>
+      <li>Causal inference</li>
+      <li>Evidence synthesis</li>
+      <li class="fragment fade-up"><strong>AI Model Husbandry</strong></li>
+    </ul>
+  </div>
+  <div style="flex:1;">
+    <h3>Governance Modes</h3>
+    <ul>
+      <li><a href="https://www.nature.com/articles/sdata201618">FAIR data principles</a>: Findability, Accessibility, Interoperability, and Reusability</li>
+      <li>Data-sharing agreements</li>
+    </ul>
+  </div>
+</div>
+
+--
+
+## Strengthening Institutions
+
+<div style="display:flex; justify-content:space-between; gap:4rem; width:100%;">
+  <div style="flex:1;">
+    <h3>AI Skills</h3>
+    <ul>
+      <li>Data stewardship</li>
+      <li>Bias audit</li>
+      <li>Teamwork</li>
+      <li>AI localization</li>
+      <li>Digital literacy</li>
+    </ul>
+  </div>
+  <div style="flex:1;">
+    <h3>Governance Modes</h3>
+    <ul>
+      <li>Data trusts</li>
+      <li>Ethics review boards</li>
+      <li>WHO AI Ethics guidance</li>
+    </ul>
+  </div>
+</div>
+
+--
+
+## Advocating HPSR
+
+<div style="display:flex; justify-content:space-between; gap:4rem; width:100%;">
+  <div style="flex:1;">
+    <h3>AI Skills</h3>
+    <ul>
+      <li>Storytelling</li>
+      <li>Visualization</li>
+      <li>Policy translation</li>
+      <li>Ethical foresight</li>
+      <li>Stakeholder engagement</li>
+    </ul>
+  </div>
+  <div style="flex:1;">
+    <h3>Governance Modes</h3>
+    <ul>
+      <li>Multi-stakeholder councils</li>
+      <li>Transparency charters</li>
+      <li>Open consultations</li>
+    </ul>
+  </div>
+</div>
+
+
+
+--
+
+## Cross-Cutting Notes
+- Open ecosystems; South–South collaboration
+- Embed AI ethics and inclusion
+- Shared knowledge commons
+- Career pathways in LMICs
+
+---
+
+# 💡
+
+## Capacity Building
+
+### Framing the Discussion
+
+--
+
+## Going Beyond Generative AI
+
+- AI in HPSR is more than GenAI.
+  - Predictive analytics
+  - Causal inference
+  - Simulation & optimisation
+  - Image analysis
+- **Need:** Broaden framing to reflect the full spectrum of AI tools relevant to HPSR.
+
+--
+
+## Broaden Engagement with Non-Technical Actors?
+
+- Discuss how AI could:
+  - Support decision-makers
+  - Empower civil society
+  - Strengthen community participation
+- **Need:** Illustrate practical pathways for inclusive use beyond researchers.
+
+--
+
+## How to Build the Evidence Base?
+
+- Current documentation is largely anecdotal.
+- Lack of systematic tracking of AI use in HPSR.
+- **Need:**
+  - Roadmap for building a cumulative evidence base
+  - Registries of AI applications in HPSR
+  - Shared reporting standards for transparency
+
+--
+
+## Going Beyond AI Literacy
+
+- Current emphasis: AI literacy and mentoring.
+- Attend to infrastructure foundations:
+  - **Regional compute hubs**
+  - **Open datasets**
+  - **Shared repositories and tools**
+- **Need:** Prioritise investments that enable equitable access and sustainability.
+
+--
+
+## Roles for Global Institutions?
+
+- **Need:** Clearer hints on priorities:
+  - Should WHO, funders, or regional bodies convene **standards**?
+  - Should they **invest in open-source models/tools**?
+  - Should they negotiate with commercial vendors on **fair terms**?
+  - Should they support **shared infrastructure**?
+  - What should be their **position on intellectual property** and data governance?
+
+---
+
+# 🌸
+
+## Thank You
+
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <!-- Reveal.js and plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/notes/notes.min.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      // Optional: tweak sizing to your room
+      width: 1280, height: 720, margin: 0.06
+    });
+  </script>
+</body>
+
+</html>
